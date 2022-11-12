@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/websocket.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulator - Browser SDK</title>
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank">
+          <img src="/websocket.svg" class="logo" alt="Websocket logo" />
+        </a>
+        <h2>Simulator for Custom Websocket SDK</h2>
+        <div class="msg-container">
+          <p id="status">Connecting...</p>
+          <ul id="list"></ul>
+          <form id="form">
+            <input type="text" name="message" id="message" autofocus />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <button type="button" class="disconnect" id="disconnect">Disconnect</button>
+        <p class="read-the-docs">Click on the Websocket logo to learn more</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
