@@ -1,4 +1,4 @@
-export const isJson = (text: unknown) => {
+const isJson = (text: unknown) => {
   if (typeof text !== 'string') {
     return false;
   }
@@ -9,3 +9,5 @@ export const isJson = (text: unknown) => {
     return false;
   }
 };
+
+export default isJson;

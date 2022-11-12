@@ -1,6 +1,7 @@
+import { isJson } from '@websocket/utils';
+
 import type { ClientMessage, SdkConfig, ServerMessage } from './@types/typings';
 import { WSServer } from './constants';
-import { isJson } from './utils';
 
 /**
  * The browser SDK instance

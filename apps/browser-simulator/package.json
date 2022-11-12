@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@websocket/browser-sdk": "file: ../browser-sdk"
+    "@websocket/browser-sdk": "*",
+    "@websocket/utils": "*"
   },
   "devDependencies": {
     "typescript": "^4.6.4",
