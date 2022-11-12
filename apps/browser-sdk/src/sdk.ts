@@ -1,4 +1,4 @@
-import { ClientMessage, SdkConfig, ServerMessage } from './@types/typings';
+import type { ClientMessage, SdkConfig, ServerMessage } from './@types/typings';
 import { WSServer } from './constants';
 import { isJson } from './utils';
 
