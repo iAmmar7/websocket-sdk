@@ -82,6 +82,7 @@ button:focus-visible {
 
 .msg-container {
   height: 20rem;
+  max-width: 400px;
   border: 1px solid grey;
   border-radius: 8px;
   overflow: hidden;
