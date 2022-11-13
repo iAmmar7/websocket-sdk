@@ -1,5 +1,5 @@
 {
-  "name": "socket-sdk",
+  "name": "websocket-sdk",
   "version": "0.0.0",
   "private": true,
   "workspaces": [

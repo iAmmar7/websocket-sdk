@@ -1,1 +1,1 @@
-export * from './sdk';
+export { default as ClientSDK } from './sdk';

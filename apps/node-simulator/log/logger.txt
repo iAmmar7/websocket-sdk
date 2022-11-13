@@ -1,0 +1,12 @@
+SEND: {"foo":"bar"}
+RECV: {"foo":"bar"}
+SEND: {"foo":"bar"}
+RECV: {"foo":"bar"}
+SEND: {"foo":"bar"}
+RECV: {"foo":"bar"}
+SEND: {"foo":"bar"}
+RECV: {"foo":"bar"}
+SEND: {"foo":"bar"}
+RECV: {"foo":"bar"}
+SEND: {"foo":"bar"}
+RECV: {"foo":"bar"}
