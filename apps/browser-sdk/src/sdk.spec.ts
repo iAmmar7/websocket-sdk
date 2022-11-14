@@ -29,7 +29,7 @@ describe('SDK', () => {
     expect(clientWithoutConfig.wsClient.url).toEqual(WSServer);
   });
 
-  test('should expose public functions', () => {
+  it('should expose public functions', () => {
     expect(typeof sdkInstance.on).toBe('function');
     expect(typeof sdkInstance.send).toBe('function');
     expect(typeof sdkInstance.disconnect).toBe('function');
