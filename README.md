@@ -8,10 +8,10 @@ This monorepo is built with [Turbo](https://turbo.build/repo). It includes the f
 
 ### Apps
 
-- `browser-sdk`: an integrable SDK for Web application - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-sdk)
-- `node-sdk`: an integrable SDK for Node application - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/node-sdk)
-- `browser-simulator`: a simulator app to see the browser-sdk in action - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-simulator)
-- `node-simulator`: a simulator app to see the node-sdk in action - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/node-simulator)
+- `browser-sdk`: an integrable SDK for Web application - [More details](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-sdk)
+- `node-sdk`: an integrable SDK for Node application - [More details](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/node-sdk)
+- `browser-simulator`: a simulator app to see the browser-sdk in action - [More details](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-simulator)
+- `node-simulator`: a simulator app to see the node-sdk in action - [More details](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/node-simulator)
 
 ### Packages
 - `eslint-config`: `eslint` configurations (includes `eslint-config-prettier`)
