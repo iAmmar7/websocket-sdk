@@ -2,24 +2,29 @@
   "name": "@websocket/node-sdk",
   "version": "1.0.0",
   "author": "Ammar Ansari",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
   },
   "scripts": {
     "tsc": "tsc",
     "build": "npm run tsc",
-    "dev": "nodemon --exec npx ts-node src/index.ts"
+    "dev": "nodemon --exec npx ts-node src/index.ts",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.2",
     "@types/node": "^18.11.9",
     "@types/ws": "^8.5.3",
     "eslint": "^8.27.0",
     "eslint-config": "*",
-    "tsconfig": "*",
+    "jest-websocket-mock": "^2.4.0",
     "nodemon": "^2.0.20",
+    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
+    "tsconfig": "*",
     "typescript": "^4.8.4"
   },
   "dependencies": {
