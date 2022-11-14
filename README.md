@@ -26,7 +26,15 @@ Both SDKs are being used as an external package in their respective simulator. T
 
 ## How to run?
 
-### 1. Build
+### 1. Install
+To install dependencies for all apps and packages, run the following command:
+
+```
+cd websocket-sdk
+npm install
+```
+
+### 2. Build
 
 To build all apps and packages, run the following command:
 
@@ -35,7 +43,7 @@ cd websocket-sdk
 npm run build
 ```
 
-### 2. Run
+### 3. Run
 
 To develop all apps and packages, run the following command:
 
@@ -44,7 +52,7 @@ cd websocket-sdk
 npm run dev
 ```
 
-### 3. Observe
+### 4. Observe
 
 Open port 3001 in the browser to see the `browser-simulator`. This simulator is using a `browser-sdk` as an external package.
 
