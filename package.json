@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "turbo run test --cache-dir='./.turbo'"
+    "test": "turbo run test --cache-dir='./.turbo'",
+    "coverage": "turbo run coverage --cache-dir='./.turbo'"
   },
   "devDependencies": {
     "eslint-config": "*",
