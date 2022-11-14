@@ -12,6 +12,8 @@ An integrable WebSocket SDK that handles WebSocket client for the web applicatio
   - `renderIn`: HTML DOM Element to render the list. By default SDK will renders the Recieved and Send messages on the Document Body element.
 - SDK emits a custom event `sdkready` when Client successfully connects with the Server.
 
+For integration example, see the [browser-simulator](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-simulator) applciation.
+
 ## How to run?
 
 Create a build
