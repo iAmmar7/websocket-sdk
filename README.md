@@ -1,73 +1,76 @@
-# Turborepo starter
+# WebSocket SDKs
 
-This is an official npm starter turborepo.
+WebSocket Client SDK for both Browser/Web and Node JS.
 
 ## What's inside?
 
-This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
+This monorepo is built with [Turbo](https://turbo.build/repo). It includes the following apps and packages:
 
-### Apps and Packages
+### Apps
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `browser-sdk`: an integrable SDK for Web application - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-sdk)
+- `node-sdk`: an integrable SDK for Node application - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/node-sdk)
+- `browser-simulator`: a simulator app to see the browser-sdk in action - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/browser-simulator)
+- `node-simulator`: a simulator app to see the node-sdk in action - [link](https://github.com/iAmmar7/websocket-sdk/tree/main/apps/node-simulator)
+
+### Packages
+- `eslint-config`: `eslint` configurations (includes `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `utils`: a utility package shared by both `node-sdk` and `browser-sdk`
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-### Utilities
+Both SDKs and a Utility package is bundled with [Vite](https://vitejs.dev/).
 
-This turborepo has some additional tools already setup for you:
+Both SDKs are being used as an external package in their respective simulator. These SDKs can be published to [NPM](https://www.npmjs.com/).
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## How to run?
 
-### Build
+### 1. Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd websocket-sdk
 npm run build
 ```
 
-### Develop
+### 2. Run
 
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd websocket-sdk
 npm run dev
 ```
 
-### Remote Caching
+### 3. Observe
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+Open port 3001 in the browser to see the `browser-simulator`. This simulator is using a `browser-sdk` as an external package.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+Similarly, `node-sdk` is integrated as an external package in the `node-simulator`.
 
+## Unit test
+Jest is being used in both of SDKs for unit testing.
+
+To run the test
 ```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
+cd websocket-sdk
+npm run test
 ```
 
-## Useful Links
+To see the test coverage
+```
+cd websocket-sdk
+npm run coverage
+```
 
-Learn more about the power of Turborepo:
+## Technologies
 
-- [Pipelines](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Tools and technologies used in this project
+
+- [Turborepp](https://turbo.build/repo)
+- [TypeScript](https://www.typescriptlang.org)
+- [Vite](https://vitejs.dev)
+- [Node JS](https://nodejs.org)
+- [JEST](https://jestjs.io)
